@@ -1,9 +1,10 @@
 steps :
+go to assignment folder and then
 1. npm install
 2. npm start
 
 
--->Please find DB credentials in server.js file (Its a free service might time out after some time try making a DB locally , DBMS Failure is covered as part of this assignment)
+-->Please find DB credentials in server.js file (Its a free service might time out after some time try making a DB locally , DBMS Failure is not covered as part of this assignment)
 there are four tables
 1.casaone_orders
 2.casaone_orders_details
@@ -18,7 +19,7 @@ APIs
 
 LOGIN API
 
-1. POST / localhost:3000/api/users-login/
+1. POST / localhost:3000/api/users-login/ OR https://casaone.herokuapp.com/api/users-login/
  body
  {
 	"email": "manishpremi20@gmail.com",

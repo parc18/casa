@@ -38,10 +38,11 @@ REST.prototype.configureExpress = function(connection) {
       var rest_router = new rest(router,connection,md5);
       self.startServer();
 }
-var port = process.env.PORT || 3000;
+REST.prototype.port = process.env.PORT || 3000;
 
 REST.prototype.startServer = function() {
-      app.listen(port,function(){
+      var self = this;
+      app.listen(self.port,function(){
           console.log("All right ! I am alive at Port 3000.");
       });
 }
